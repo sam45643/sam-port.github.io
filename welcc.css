@@ -1,0 +1,122 @@
+* {
+  overflow: hidden;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  animation: bg 7s ease-in-out forwards;
+  height: 100%;
+  width: 100%;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .title {
+  line-height: 80px;
+  letter-spacing: 1px;
+  overflow-y: hidden;
+  font-family: "A-OTF Gothic MB101 Pro", "Microsoft YaHei";
+  color: #000;
+  font-size: 80px;
+  white-space: nowrap;
+  text-align: center;
+  animation: font 7s ease-in-out forwards;
+  background: -webkit-linear-gradient(to right, #665fc7, #a570bc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@keyframes bg {
+  from {
+    background: #000;
+    transform: scale(20);
+  }
+  
+  76% {
+    background: #000;
+  }
+  
+  79% {
+    background: #fff;
+    transform: unset;
+  }
+  
+  to {
+    background: #000000;
+    transform: unset;
+  }
+}
+
+@keyframes font {
+  from {
+    color: #fff;
+  }
+  
+  76% {
+    color: #fff;
+    text-shadow: unset;
+  }
+  
+  80% {
+    color: #fff;
+    text-shadow: 0 0 10px #714e75;
+  }
+  
+  to {
+    color: #000;
+    text-shadow: unset;
+  }
+}
+.image-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  justify-content: middle;
+  align-items: center;
+  margin-top: 20px;
+  margin-left: 550px;
+}
+
+.image-button img {
+  width: 100px;
+  height: 100px;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+
+}
+.image-button img {
+  width: 100px;
+  height: 100px;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%; /* Adds a circular shape to the image */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Adds a subtle box shadow */
+  transition: transform 0.3s ease; /* Adds a smooth transition effect */
+}
+
+.image-button img:hover {
+  transform: scale(1.1); /* Increases the size of the image on hover */
+}
+
+.image-button span {
+  margin-left: 10px; /* Adds some spacing between the image and the text */
+  font-weight: bold;
+}
+
+.image-button:active {
+  transform: scale(0.9); /* Shrinks the image when clicked */
+}
